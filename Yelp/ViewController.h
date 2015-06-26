@@ -11,5 +11,7 @@
 @interface ViewController : UIViewController
 
 
+@property (strong, nonatomic) NSDictionary *restaurant;
+
 @end
 
