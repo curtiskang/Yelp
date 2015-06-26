@@ -23,6 +23,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 @property (strong, nonatomic) NSArray *movies;
 @property (strong, nonatomic) NSMutableArray *testArray;
 @property (strong, nonatomic) NSDictionary *dictionary;
+@property (weak, nonatomic) IBOutlet UILabel *distance;
 @property (strong, nonatomic) NSMutableDictionary *dictData;
 @end
 
@@ -139,12 +140,35 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     RestCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyRestCell" forIndexPath:indexPath];
     NSDictionary *movie = self.movies[indexPath.row];
-      NSLog(@"DEBUG!");
+    
     cell.titleLabel.text = movie[@"name"];
-    cell.addrLabel.text = [ movie valueForKeyPath:@"address"];
+    cell.addrLabel.text = [movie valueForKeyPath:@"location.address"][0];
+    NSMutableString *category = [[NSMutableString alloc] init];
+    NSString *category2= [[NSString alloc] init];
+ category =[NSMutableString stringWithFormat:@"%@",movie[@"categories"][0][0]];
+    if ( [ movie[@"categories"] count ] > 1 )
+    {
+       
+        category2 = [NSMutableString stringWithFormat:@"%@",movie[@"categories"][1][0]];
+        NSLog(@"test %@", category2);
+        [ category appendString:@" & "];
+
+        [ category appendString:category2];
+       // [ category appendString:movie[@"categories"][1][0]];
+    }
+    NSLog(@"TTTTTT");
+    cell.noteLabel.text = category;
+    NSLog(@"XXXXXX");
+    cell.reviewCount.text = [NSString stringWithFormat:@"%d",(int)movie[@"review_count"]];
+    float d =  [[movie valueForKey:@"distance"] floatValue]/1000;
+   
+    NSMutableString *a =[NSMutableString stringWithFormat:@"%1.2f", d];
+   
+    [a appendString:@"m"];
+    cell.distanceLabel.text =a;
     NSString *posterURLString = movie[@"image_url"];
-    NSString *ratingURLString = movie[@"rating_img_url"];
-   [cell.posterView setImageWithURL:[NSURL URLWithString:posterURLString]];
+    NSString *ratingURLString = movie[@"rating_img_url_small"];
+    [cell.posterView setImageWithURL:[NSURL URLWithString:posterURLString]];
     [cell.ratingView setImageWithURL:[NSURL URLWithString:ratingURLString]];
 
     NSLog(@"DEBUG!");
