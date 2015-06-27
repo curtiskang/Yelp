@@ -158,8 +158,10 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     }
     NSLog(@"TTTTTT");
     cell.noteLabel.text = category;
-    NSLog(@"XXXXXX");
+   
     cell.reviewCount.text = [NSString stringWithFormat:@"%d",(int)movie[@"review_count"]];
+    NSLog(@"%@",movie[@"review_count"]);
+ NSLog(@"XXXXXX");
     float d =  [[movie valueForKey:@"distance"] floatValue]/1000;
    
     NSMutableString *a =[NSMutableString stringWithFormat:@"%1.2f", d];
