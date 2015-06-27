@@ -24,7 +24,7 @@
                                 </searchBar>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyRestCell" rowHeight="86" id="uI7-xo-4eJ" customClass="RestCell">
-                                        <rect key="frame" x="0.0" y="66" width="320" height="86"/>
+                                        <rect key="frame" x="0.0" y="130" width="320" height="86"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uI7-xo-4eJ" id="sym-VW-9qB">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="85"/>
@@ -202,6 +202,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Qsl-xg-0ce"/>
+        <segue reference="CN6-WM-4Ak"/>
     </inferredMetricsTieBreakers>
 </document>
