@@ -10,8 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @property (strong, nonatomic) NSDictionary *restaurant;
 
+-(void) callYelpAPI:NSString;
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText;
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar;  
 @end
-

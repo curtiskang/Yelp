@@ -16,6 +16,7 @@
 		B1E2577A1B3B484A00CAD82F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E257791B3B484A00CAD82F /* Images.xcassets */; };
 		B1E2577D1B3B484A00CAD82F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1E2577B1B3B484A00CAD82F /* LaunchScreen.xib */; };
 		B1E257891B3B484A00CAD82F /* YelpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E257881B3B484A00CAD82F /* YelpTests.m */; };
+		B1E2B5181B402809006F8C54 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E2B5171B402809006F8C54 /* FilterViewController.m */; };
 		B1EFCBDC1B3CFCE700F7EC13 /* RestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EFCBDB1B3CFCE700F7EC13 /* RestCell.m */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,8 @@
 		B1E257821B3B484A00CAD82F /* YelpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E257871B3B484A00CAD82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1E257881B3B484A00CAD82F /* YelpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YelpTests.m; sourceTree = "<group>"; };
+		B1E2B5161B402809006F8C54 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		B1E2B5171B402809006F8C54 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
 		B1EFCBDA1B3CFCE700F7EC13 /* RestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestCell.h; sourceTree = "<group>"; };
 		B1EFCBDB1B3CFCE700F7EC13 /* RestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +115,8 @@
 				B1EFCBDA1B3CFCE700F7EC13 /* RestCell.h */,
 				B1EFCBDB1B3CFCE700F7EC13 /* RestCell.m */,
 				B1E257761B3B484A00CAD82F /* Main.storyboard */,
+				B1E2B5161B402809006F8C54 /* FilterViewController.h */,
+				B1E2B5171B402809006F8C54 /* FilterViewController.m */,
 				B1E257791B3B484A00CAD82F /* Images.xcassets */,
 				B1E2577B1B3B484A00CAD82F /* LaunchScreen.xib */,
 				B1E2576C1B3B484A00CAD82F /* Supporting Files */,
@@ -292,6 +297,7 @@
 				B1E257751B3B484A00CAD82F /* ViewController.m in Sources */,
 				B1EFCBDC1B3CFCE700F7EC13 /* RestCell.m in Sources */,
 				B1E257721B3B484A00CAD82F /* AppDelegate.m in Sources */,
+				B1E2B5181B402809006F8C54 /* FilterViewController.m in Sources */,
 				B1E2576F1B3B484A00CAD82F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
